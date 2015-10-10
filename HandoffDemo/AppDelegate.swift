@@ -41,6 +41,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    func application(application: UIApplication, willContinueUserActivityWithType userActivityType: String) -> Bool {
+        print(userActivityType, terminator: "")
+        
+        return false
+    }
+    
+    
+    func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
+        if let win = window {
+            let navController = win.rootViewController as! UINavigationController
+            let viewController = navController.topViewController as! ViewController
+            
+            viewController.restoreUserActivityState(userActivity)
+        }
+        
+        return true
+    }
 
+    
+    func application(application: UIApplication, didUpdateUserActivity userActivity: NSUserActivity) {
+        print(userActivity, terminator: "")
+        print(userActivity.userInfo, terminator: "")
+    }
+    
+    
+    func application(application: UIApplication, didFailToContinueUserActivityWithType userActivityType: String, error: NSError) {
+        print(error.localizedDescription, terminator: "")
+        print(userActivityType, terminator: "")
+    }
+    
 }
-

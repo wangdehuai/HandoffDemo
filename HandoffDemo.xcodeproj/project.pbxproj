@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		C05353361A1A510800F7BD3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05353351A1A510800F7BD3F /* AppDelegate.swift */; };
 		C05353381A1A510800F7BD3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05353371A1A510800F7BD3F /* ViewController.swift */; };
-		C053533B1A1A510800F7BD3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05353391A1A510800F7BD3F /* Main.storyboard */; };
 		C053533D1A1A510800F7BD3F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C053533C1A1A510800F7BD3F /* Images.xcassets */; };
 		C05353401A1A510800F7BD3F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C053533E1A1A510800F7BD3F /* LaunchScreen.xib */; };
 		C053534C1A1A510800F7BD3F /* HandoffDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C053534B1A1A510800F7BD3F /* HandoffDemoTests.swift */; };
+		C05353561A1A527900F7BD3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05353551A1A527900F7BD3F /* Main.storyboard */; };
+		C05353581A1A534A00F7BD3F /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05353571A1A534A00F7BD3F /* EditContactViewController.swift */; };
+		C053535A1A1A535A00F7BD3F /* ViewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05353591A1A535A00F7BD3F /* ViewContactViewController.swift */; };
+		C053535C1A1A569000F7BD3F /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C053535B1A1A569000F7BD3F /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +33,15 @@
 		C05353341A1A510800F7BD3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C05353351A1A510800F7BD3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C05353371A1A510800F7BD3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C053533A1A1A510800F7BD3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C053533C1A1A510800F7BD3F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C053533F1A1A510800F7BD3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C05353451A1A510800F7BD3F /* HandoffDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandoffDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C053534A1A1A510800F7BD3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C053534B1A1A510800F7BD3F /* HandoffDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandoffDemoTests.swift; sourceTree = "<group>"; };
+		C05353551A1A527900F7BD3F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C05353571A1A534A00F7BD3F /* EditContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
+		C05353591A1A535A00F7BD3F /* ViewContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContactViewController.swift; sourceTree = "<group>"; };
+		C053535B1A1A569000F7BD3F /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +85,10 @@
 			children = (
 				C05353351A1A510800F7BD3F /* AppDelegate.swift */,
 				C05353371A1A510800F7BD3F /* ViewController.swift */,
-				C05353391A1A510800F7BD3F /* Main.storyboard */,
+				C05353571A1A534A00F7BD3F /* EditContactViewController.swift */,
+				C05353591A1A535A00F7BD3F /* ViewContactViewController.swift */,
+				C053535B1A1A569000F7BD3F /* Contact.swift */,
+				C05353551A1A527900F7BD3F /* Main.storyboard */,
 				C053533C1A1A510800F7BD3F /* Images.xcassets */,
 				C053533E1A1A510800F7BD3F /* LaunchScreen.xib */,
 				C05353331A1A510800F7BD3F /* Supporting Files */,
@@ -156,11 +165,14 @@
 		C05353281A1A510800F7BD3F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Appcoda;
 				TargetAttributes = {
 					C053532F1A1A510800F7BD3F = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 9BTCAVN99V;
 					};
 					C05353441A1A510800F7BD3F = {
 						CreatedOnToolsVersion = 6.1;
@@ -192,9 +204,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C053533B1A1A510800F7BD3F /* Main.storyboard in Resources */,
 				C05353401A1A510800F7BD3F /* LaunchScreen.xib in Resources */,
 				C053533D1A1A510800F7BD3F /* Images.xcassets in Resources */,
+				C05353561A1A527900F7BD3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C053535A1A1A535A00F7BD3F /* ViewContactViewController.swift in Sources */,
 				C05353381A1A510800F7BD3F /* ViewController.swift in Sources */,
+				C053535C1A1A569000F7BD3F /* Contact.swift in Sources */,
 				C05353361A1A510800F7BD3F /* AppDelegate.swift in Sources */,
+				C05353581A1A534A00F7BD3F /* EditContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +251,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C05353391A1A510800F7BD3F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C053533A1A1A510800F7BD3F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C053533E1A1A510800F7BD3F /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -275,6 +282,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -338,8 +346,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HandoffDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -348,8 +359,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HandoffDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -368,6 +382,7 @@
 				);
 				INFOPLIST_FILE = HandoffDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandoffDemo.app/HandoffDemo";
 			};
@@ -383,6 +398,7 @@
 				);
 				INFOPLIST_FILE = HandoffDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandoffDemo.app/HandoffDemo";
 			};
@@ -407,6 +423,7 @@
 				C05353511A1A510800F7BD3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C05353521A1A510800F7BD3F /* Build configuration list for PBXNativeTarget "HandoffDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +432,7 @@
 				C05353541A1A510800F7BD3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
